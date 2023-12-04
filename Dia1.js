@@ -1,13 +1,11 @@
 function findFirstRepeated(gifts) {
-    let regalos = [];
-    let value = -1;
-    gifts.forEach(element => {
-        if (regalos.includes(element) && value < 0) {
-            value = element;
+    let returnValue = -1;
+    gifts.forEach((value, index) => {
+        if (gifts.indexOf(value) < index && returnValue < 0) {
+            returnValue = value;
         }
-        regalos.push(element);
     });
-    return value;
+    return returnValue;
 }
 
 const giftIds = [2, 1, 3, 5, 3, 2]
