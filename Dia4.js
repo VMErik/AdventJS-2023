@@ -21,4 +21,4 @@ function decode(message) {
 
 
 const c = decode('sa(u(cla)atn)s')
-console.log(c)
+console.log(c);
