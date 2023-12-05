@@ -1,5 +1,5 @@
 # AdventJS-2023
-Poniendo en practica los conociimientos en JavaScript con todos los retos de AdventJS del 2023
+Poniendo en practica los conocimientos en JavaScript con todos los retos de AdventJS del 2023
 
 Aqui te dejo la solucion a todos los retos de esta temporada
 
@@ -23,6 +23,7 @@ Un regalo se puede fabricar si contamos con todos los materiales necesarios para
 
 **DIA 3**
 
+
 En el taller de Santa, un elfo travieso ha estado jugando en la cadena de fabricación de regalos, añadiendo o eliminando un paso no planificado.
 
 Tienes la secuencia original de pasos en la fabricación original y la secuencia modificada modified que puede incluir un paso extra o faltar un paso.
@@ -31,6 +32,8 @@ Tu tarea es escribir una función que identifique y devuelva el primer paso extr
 
 
 **DIA 4**
+
+
 En el taller de Santa 🎅, algunos mensajes navideños han sido escritos de manera peculiar: las letras dentro de los paréntesis deben ser leídas al revés
 
 Santa necesita que estos mensajes estén correctamente formateados. Tu tarea es escribir una función que tome una cadena de texto y revierta los caracteres dentro de cada par de paréntesis, eliminando los paréntesis en el mensaje final.
@@ -38,6 +41,8 @@ Santa necesita que estos mensajes estén correctamente formateados. Tu tarea es 
 Eso sí, ten en cuenta que pueden existir paréntesis anidados, por lo que debes invertir los caracteres en el orden correcto.
 
 **DIA 5**
+
+
 Santa 🎅 está probando su nuevo trineo eléctrico, el CyberReindeer, en una carretera del Polo Norte. La carretera se representa con una cadena de caracteres, donde:
 
 ```
@@ -47,6 +52,7 @@ S = Trineo de Santa
 | = Barrera cerrada
 Ejemplo de carretera: S...|....|.....
 ```
+
 
 Cada unidad de tiempo, el trineo avanza una posición a la derecha. Si encuentra una barrera cerrada, se detiene hasta que la barrera se abra. Si está abierta, la atraviesa directamente.
 
