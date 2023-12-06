@@ -29,7 +29,7 @@ const giftIds3 = [5, 1, 5, 1]
 const firstRepeatedId3 = findFirstRepeated(giftIds3)
 console.log(firstRepeatedId3) // 5
 ```
-
+***
 
 **DIA 2**
 
@@ -58,6 +58,8 @@ const materials = 'psli'
 
 manufacture(gifts, materials) // []
 ```
+***
+
 
 **DIA 3**
 
@@ -87,7 +89,7 @@ La modificación puede ocurrir en cualquier lugar de la cadena.
 La secuencia original puede estar vacía
 
 
-
+***
 **DIA 4**
 
 
@@ -117,6 +119,8 @@ Notas:
 Las cadenas de entrada siempre estarán bien formadas con paréntesis que coinciden correctamente, no necesitas validarlos.
 En el mensaje final no deben quedar paréntesis.
 El nivel máximo de anidamiento es 2.
+
+***
 
 **DIA 5**
 
@@ -160,6 +164,8 @@ const result = cyberReindeer(road, time)
 */
 ```
 
+***
+
 **DIA 6**
 
 Los elfos están catalogando los renos de Santa 🦌 según la distancia que pueden recorrer.
@@ -194,3 +200,7 @@ const result3 = maxDistance(movements3)
 console.log(result3) // -> 5
 
 ```
+
+
+***
+
