@@ -18,9 +18,9 @@ function drawGift(size, symbol) {
     });
     return finalDraw;
 }
-
-drawGift(4, '+');
-
+console.log('******')
+console.log(drawGift(4, '+'));
+console.log('******')
 
 function drawGift2(size, symbol) {
     let lineaBase = "#".repeat(size);
@@ -40,3 +40,7 @@ function drawGift2(size, symbol) {
     });
     return finalString;
 }
+
+console.log('******')
+console.log(drawGift2(4, '+'));
+console.log('******')
