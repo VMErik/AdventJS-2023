@@ -206,6 +206,8 @@ console.log(result3) // -> 5
 
 
 **DIA 7**
+
+
 Santa está experimentando con nuevos diseños de regalos y necesita tu ayuda para visualizarlos en 3D.
 
 Tu tarea es escribir una función que, dado un tamaño n (entero), genere un dibujo de un regalo en 3D utilizando caracteres ASCII.
