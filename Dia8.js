@@ -7,7 +7,6 @@ function organizeGifts(gifts) {
         let qtyGift = parseInt(giftsList[index]);
         const gift = giftsList[index + 1];
         groupsSymbols.forEach(function(element, index) {
-            const symbol = element;
             const cantidad = groupsQuantity[index];
             let result = Math.floor(qtyGift / cantidad);
             if (result > 0) {
@@ -15,7 +14,7 @@ function organizeGifts(gifts) {
                 origanizedList.push(
                     `(${gift.repeat(result)})`
                 ): origanizedList.push(
-                    `${symbol.charAt(0)}${gift}${symbol.charAt(1)}`
+                    `${element.charAt(0)}${gift}${element.charAt(1)}`
                     .repeat(result)
                 );
             }

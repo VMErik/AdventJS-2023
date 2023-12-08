@@ -251,6 +251,8 @@ Nota: Ten en cuenta que, en los tests, la primera línea se ve empujada por el c
 ***
 
 **DIA 8**
+
+
 Los elfos están muy ocupados en el taller de Santa Claus organizando regalos 🎁 para la víspera de Navidad 🎄.
 
 El formato de entrada es especial, ya que indica el número de regalos y el tipo de regalo con letras de la a a la z. Por ejemplo, '66a11b' significa 66 regalos a y 11 regalos b.
