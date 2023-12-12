@@ -302,3 +302,110 @@ adjustLights(['🟢', '🔴', '🟢', '🔴', '🟢'])
 adjustLights(['🔴', '🔴', '🔴'])
 // -> 1 (cambias la segunda luz a 🟢)
 ```
+
+***
+
+**DIA 10**
+
+
+¡Vaya idea ha tenido Sam Elfman! Quiere ofrecer un servicio que te crea un árbol de Navidad 🎄 personalizado en cuestión de segundos.
+
+Para crearlo nos pasan una cadena de caracteres para formar el árbol y un número que indica la altura del mismo.
+
+Cada carácter de la cadena representa un adorno del árbol, y vamos utilizándolos de forma cíclica hasta llegar a la altura indicada. Como mínimo siempre nos pasarán uno.
+
+Debemos devolver un string multilínea con el árbol de Navidad formado con los adornos, la altura indicada más una última línea con el tronco formado por el carácter | en el centro y, finalmente, un salto de línea \n.
+
+Por ejemplo si recibimos la cadena "123" y el número 4 como altura, tendríamos que construir este árbol:
+
+```
+   1
+  2 3
+ 1 2 3
+1 2 3 1
+   |
+```
+Si recibimos la cadena *@o y el número 3, el árbol que debemos devolver es:
+```
+  *
+ @ o
+* @ o
+  |
+```
+
+Nota:
+
+El árbol siempre debe estar centrado, para ello añade espacios en blanco a la izquierda de cada línea.
+Crea espacios sólo a la izquierda de cada línea del árbol. No dejes espacios en blanco a la derecha.
+Los adornos tienen un espacio en blanco entre ellos de separación.
+
+***
+
+**DIA 11**
+
+
+En el taller de Santa, los elfos aman los acertijos 🧠. Este año, han creado uno especial: un desafío para formar un palíndromo navideño.
+
+Un palíndromo es una palabra que se lee igual hacia adelante y hacia atrás. Los elfos quieren saber si es posible formar un palíndromo haciendo, como mucho, un intercambio de letras.
+
+Crea una función getIndexsForPalindrome que reciba una cadena de caracteres y devolverá:
+
+Si ya es un palíndromo, un array vacío.
+Si no es posible, null.
+Si se puede formar un palíndromo con un cambio, un array con las dos posiciones (índices) que se deben intercambiar para poder crearlo.
+Por ejemplo:
+
+```
+getIndexsForPalindrome('anna') // []
+getIndexsForPalindrome('abab') // [0, 1]
+getIndexsForPalindrome('abac') // null
+getIndexsForPalindrome('aaaaaaaa') // []
+getIndexsForPalindrome('aaababa') // [1, 3]
+getIndexsForPalindrome('caababa') // null
+```
+Si se puede formar el palíndromo con diferentes intercambios, siempre se debe devolver el primero que se encuentre.
+
+***
+
+**DIA 12**
+
+En el Polo Norte todavía usan fotocopiadoras de papel. Los elfos las usan para copiar las cartas que los niños envían a Santa y así poder enviarlas a todos los departamentos de regalos.
+
+Sin embargo ya son muy viejas y no funcionan muy bien. Cada vez que hacen una copia, la calidad de la copia disminuye ligeramente, un fenómeno conocido como pérdida generacional.
+
+Necesitas detectar si una carta es una copia de otra. Las cartas son muy largas y no puedes leerlas, pero puedes compararlas con un algoritmo.
+
+Existe una gran probabilidad de que un caracter se degrade en cada copia (¡no pasa siempre!). Y al ocurrir, la regla que sigue es:
+
+Los caracteres de la A a la Z se degradan de mayúsculas a minúsculas (A-Z ⇒ a-z)
+Las letras se degradan en una serie de caracteres en este orden: a-z ⇒ # ⇒ + ⇒ : ⇒ . ⇒
+Los caracteres que no son letras (como los dígitos) no se degradan.
+Sabiendo esto y recibiendo la carta original y la copia, debes determinar si la copia es una copia de la original.
+
+```
+checkIsValidCopy(
+  'Santa Claus is coming',
+  'sa#ta cl#us is comin#'
+) // true
+checkIsValidCopy(
+  'Santa Claus is coming',
+  'p#nt: cla#s #s c+min#'
+) // false (por la p inicial)
+checkIsValidCopy('Santa Claus', 's#+:. c:. s') // true
+checkIsValidCopy('Santa Claus', 's#+:.#c:. s') // false (hay un # donde no debería)
+```
+
+Para entender cómo funcionan las fotocopiadoras y su degradación, mira este ejemplo:
+
+```
+original:  'Santa Claus'
+1ª copia:  'santa cla#s'
+2ª copia:  'sa#t# cl#+s'
+3ª copia:  'sa+## c#+:s'
+4ª copia:  's#++. c+:.s'
+5ª copia:  's#+:. c:. s'
+```
+
+Por lo tanto s#+:. c+:++ es una copia válida de Santa Claus. Y, como ves, la degradación de las letras no se produce en un orden específico, es aleatorio.
+
+Basado en el desafío de CodeWars Photocopy decay
